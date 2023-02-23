@@ -54,7 +54,6 @@
             <div class="input-field col s12">
                 <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
                 <select id="category_id" name="category_id" class="validate" required>                
-                    <option value="{{ task.category_id }}" selected>{{ task.category }}</option>
                     {% for category in categories %}
                         {% if category == task.category %}
                             <option value="{{ category.id }}" selected>{{ category.category_name }}</option>
